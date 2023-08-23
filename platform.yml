@@ -1,0 +1,22 @@
+name: DataEase
+category: custom
+type: WebCloud
+comment: "{{ 'DataEase' | trans }}"
+protocols:
+  - name: DataEase
+    port: 443
+    primary: true
+
+i18n:
+  DataEase:
+    zh: DataEase
+    ja: データイーズ
+  Account ID:
+    zh: 账号ID
+    ja: アカウント ID
+  International:
+    zh: 国际
+    ja: こくさい
+  Whether to use the international login page:
+    zh: 是否使用国际登录界面
+    ja: 国際ログイン画面を使いますか

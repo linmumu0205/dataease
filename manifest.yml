@@ -1,0 +1,22 @@
+name: DataEase
+display_name: "{{ 'DataEase' | trans }}"
+version: 0.1
+comment: "{{ 'DataEase Computing Management Platform' | trans }}"
+author: mumu
+exec_type: python
+update_policy: always
+type: web
+tags:
+  - web
+protocols:
+  - DataEase
+
+i18n:
+  DataEase:
+    en: DataEase
+    zh: DataEase
+    ja: データイーズ
+  DataEase Computing Management Platform:
+    en: DataEase Computing Management Platform
+    zh: DataEase
+    ja: DataEaseクラウドコンピューティング管理プラットフォーム
