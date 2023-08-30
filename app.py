@@ -83,22 +83,19 @@ class WebAPP(object):
             Step({
                 'step': 1,
                 'value': self.account.username,  # 用户名
-                'target': 'xpath=//*[@class="el-input__inner"]',  # 使用 "username" 的定位
-                #'target': 'xpath=//*[@id="app"]/div[1]/div/div/div/div[1]/form/div[3]/div[2]/div/div/input',  # 使用 "username" 的定位
+                'target': 'xpath=//div[@class="el-form-item__content"]/div/input[@placeholder="ID"]',  # 定位用户名输入框
                 'command': Command.TYPE
             }),
             Step({
                 'step': 2,
                 'value': self.account.secret,  # 密码
-                'target': 'xpath=//*[@class="el-input__inner"]',
-                #'target': 'xpath=//*[@id="app"]/div[1]/div/div/div/div[1]/form/div[3]/div[3]/div/div/input'# 使用 "password" 的定位
+                'target': 'xpath=//div[@class="el-form-item__content"]/div/input[@placeholder="密码"]',  # 定位密码输入框
                 'command': Command.TYPE
             }),
             Step({
                 'step': 3,
                 'value': None,
-                'target': 'xpath=//*[@class="el-button submit el-button--primary el-button--default"]',  # 点击登录按钮的定位
-                #'target': 'xpath=//*[@id="app"]/div[1]/div/div/div/div[1]/form/div[4]/button'
+                'target': 'xpath=//button[@class="el-button submit el-button--primary el-button--default"]',  # 定位登录按钮
                 'command': Command.CLICK
             })
         ]
