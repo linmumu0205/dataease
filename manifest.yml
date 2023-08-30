@@ -1,6 +1,6 @@
 name: DataEase
 display_name: "{{ 'DataEase' | trans }}"
-version: 0.1
+version: 0.1.0
 comment: "{{ 'DataEase Computing Management Platform' | trans }}"
 author: mumu
 exec_type: python
